@@ -1,6 +1,5 @@
 #!/bin/bash
-
-
+set +x
 exit_1() {
     echo " GO TEST $* FAILED "
     exit 1
@@ -26,10 +25,15 @@ run_mains() {
       $main
     done;
 }
+
+# show build log
+echo " ----- BUILD LOG ----- "
 cat *.log
+
 run_tests
 run_mains
-bash
+
+#bash
 
 
 

@@ -10,7 +10,7 @@ install [docker](https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
 ```bash
 # if docker is running
-# this will pull the environment
+# this will run the run the docker build and then run container entrypoint
 run.sh -b
 ```
 
@@ -34,14 +34,13 @@ message, err:=greetings.Hello(name)
 
 >build.sh  # will build the container
 >run.sh    # will run the container
->run.sh -b # will build the container,  and if successful, run the containers
+>run.sh -b # will build the container,  and if successful, run the container
 
 # inside container (dockerfile helper script)
-> in_docker_build.sh #will scan subdirectories for package main(s) and build them 
+> in_docker_build.sh # will scan subdirectories for package main(s) and build them 
 
 # will scan subdirectories for tests and run them, and if successful, 
 # run the assemblies in $GOBIN
-# leaves runner in bash 
 > exec.sh # the entrypoint 
 
 ```

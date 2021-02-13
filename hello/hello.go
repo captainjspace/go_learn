@@ -22,7 +22,7 @@ func greet(name string) {
 func main() {
 
 	log.SetPrefix("greetings: ")
-    log.SetFlags(0)
+	log.SetFlags(0)
 
 	fmt.Println("Hello World")
 	fmt.Println(quote.Go())

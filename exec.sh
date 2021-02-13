@@ -26,6 +26,7 @@ run_mains() {
       $main
     done;
 }
+cat *.log
 run_tests
 run_mains
 bash

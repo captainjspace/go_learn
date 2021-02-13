@@ -2,6 +2,7 @@
 
 
 build() {
+  echo " ---- RUNNING BUILDER -----"
   ./build.sh
   if [[ $? != 0 ]]; then
     echo "BUILD FAILED"
